@@ -1,0 +1,13 @@
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  position: relative;
+  padding: 20px;
+  gap: 20px;
+  padding-bottom: 150px;
+
+  @include lg {
+    flex-direction: column-reverse;
+  }
+}

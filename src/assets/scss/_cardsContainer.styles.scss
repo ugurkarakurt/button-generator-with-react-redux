@@ -1,0 +1,80 @@
+.cards-container {
+  flex: 3 1;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  @include lg {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+
+    &:last-child {
+      grid-column: 1 / -1;
+    }
+
+    .card-header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eeeeee;
+      padding: 10px 0;
+
+      h2 {
+        font-size: 16px;
+      }
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+
+      .MuiInputBase-root {
+        width: 100%;
+      }
+
+      .MuiFormControl-root,
+      .MuiFormControl-root-label,
+      label {
+        margin: 0;
+        width: 100%;
+      }
+
+      .MuiSwitch-root {
+        transform: translateX(-10px);
+      }
+
+      .range-input {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+
+      .switch-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+      }
+
+      .color-input {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+}
