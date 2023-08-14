@@ -1,4 +1,4 @@
 # Country List with React/Redux
 
-visit [Button Generator](button-generator.surge.sh).
+visit [Button Generator](https://button-generator.surge.sh/).
 
